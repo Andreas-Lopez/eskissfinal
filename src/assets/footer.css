@@ -1,0 +1,90 @@
+footer {
+    background-color: black;
+    padding:1rem;
+}
+
+.barreblanche {
+    background-color: white;
+    height: 7px;
+    width: 30%;
+    margin-top: 40px;
+  }
+.titlefoot {
+    color: var(--footer);
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 27px;
+}
+
+.titlefoot2 {
+    color: var(--footer);
+    text-align: center;
+    font-family: 'Barlow';
+    font-size: 22px;
+}
+
+.width70 {
+    width:70%;
+    margin:auto;
+}
+.navigation a {
+    display:block;
+    color: white;
+    font-family: 'Barlow';
+    font-size: 15px;
+    text-align: center;
+    line-height: 30px;
+}
+.width65 {
+    width:65%;
+    margin:auto;
+}
+.paiements, .navigation {
+    width:35%;
+    
+}
+
+.paiements2 {
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    max-height: 10rem;
+    
+}
+
+.imgpaiement {
+    height: 3rem;
+    margin: 1rem;
+}
+
+.width30 {
+    width:30%;
+}
+.reseaux {
+    display:flex;
+    justify-content:center;
+}
+.reseaux a {margin:1rem;}
+
+.flex-row {
+    display:flex;
+    justify-content: space-between;
+    }
+    
+    .accrochediv {
+    align-self:center;
+    width: 50%;
+    }
+    
+    .flex-column {
+    display:flex;
+    flex-direction:column;
+    }
+    
+    
+    .flex-wrap {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    text-align: center;
+    }

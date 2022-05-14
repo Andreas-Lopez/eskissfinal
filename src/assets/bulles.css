@@ -1,0 +1,55 @@
+.post-it1 {
+    background-color: white;
+    width: 505px;
+    padding: 50px 50px 150px 50px;
+    border-radius: 41% 59% 31% 69% / 45% 60% 40% 55%  ;
+    text-align: center;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.1); 
+    box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.1);
+   
+}
+
+.post-it2 {
+    background-color: white;
+    width: 505px;
+    height: 300px;
+    border-radius: 58% 42% 64% 36% / 57% 42% 58% 43%  ;
+    padding: 50px 50px 350px 50px;
+    text-align: center;
+    margin-top: 180px;
+    -webkit-box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.1); 
+    box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.1);
+    justify-items: center;
+}
+
+.post-it3 {
+    background-color: white;
+    width: 505px;
+    border-radius: 37% 63% 62% 38% / 56% 42% 58% 44%   ;
+    margin-bottom: 80px;
+    text-align: center;
+    padding: 100px 50px 150px 50px;
+    -webkit-box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.1); 
+    box-shadow: 0px 20px 15px 0px rgba(0,0,0,0.1);
+    align-items: center;
+}
+
+.flex-row {
+    display:flex;
+    justify-content: space-between;
+    margin-right: 150px;
+    margin-left: 150px;
+    }
+    
+    .flexpostit {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .post-it
+ {
+    width: 40%;
+    margin: 1rem;
+}
+

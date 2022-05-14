@@ -17,12 +17,16 @@ module.exports = {
        },
        "Boutons": {
         "1": "#fff500"
+       },
+       "Orange": {
+        "1": "#f8e5ce"
        }
        
     },
 
     "fontFamily": {
-      header: ['Luckiest Guy']
+      Luckiest: ['Luckiest Guy'],
+      Barlow : ['Barlow']
      },
     
    }
