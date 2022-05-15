@@ -156,4 +156,5 @@ import HelloWorld from "@/components/HelloWorld.vue";
 @import "@/assets/footer.css";
 @import "@/assets/bulles.css";
 @import "@/assets/normalize.css";
+@import "@/assets/inscription.css";
 </style>
