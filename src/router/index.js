@@ -7,6 +7,7 @@ import GalerieView from '../views/GalerieView.vue'
 import ProposView from '../views/ProposView.vue'
 import CGVView from '../views/CGVView.vue'
 import InscriptionView from '../views/InscriptionView.vue'
+import GalerieArtisteView from '../views/GalerieArtisteView.vue'
 
 
 const router = createRouter({
@@ -20,6 +21,7 @@ const router = createRouter({
     { path: '/Propos',    name: 'ProposView',      component: ProposView },
     { path: '/CGV',    name: 'CGVView',      component: CGVView },
     { path: '/Inscription',    name: 'InscriptionView',      component: InscriptionView },
+    { path: '/GalerieArtiste',    name: 'GalerieArtisteView',      component: GalerieArtisteView },
   ]
 })
 
