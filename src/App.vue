@@ -155,4 +155,5 @@ import HelloWorld from "@/components/HelloWorld.vue";
 @import "@/index.css";
 @import "@/assets/footer.css";
 @import "@/assets/bulles.css";
+@import "@/assets/normalize.css";
 </style>
