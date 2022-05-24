@@ -16,7 +16,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow text-right">
           <RouterLink
-            to="/GuideStyle"
+            to="/MonCompte"
             class="
               block
               mt-4
@@ -27,7 +27,21 @@ import HelloWorld from "@/components/HelloWorld.vue";
               font-Luckiest
               text-xl
             "
-            >Guide de Style
+            >monn compte
+          </RouterLink>
+          <RouterLink
+            to="/Inscription"
+            class="
+              block
+              mt-4
+              lg:inline-block lg:mt-0
+              text-white
+              hover:text-Boutons-1
+              mr-10
+              font-Luckiest
+              text-xl
+            "
+            >inscription (temporaire)
           </RouterLink>
           <RouterLink
             to="/Don"
@@ -89,24 +103,26 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <img src="/Lettre.svg" alt="" />
         </div>
-        <Routerlink to="/Inscription">
-          <button
-            class="
-              bg-Boutons-1
-              hover:bg-black
-              text-black
-              py-2
-              px-7
-              hover:border-black hover:text-Boutons-1
-              rounded-3xl
-              border-2 border-black
-              font-Barlow font-bold
-              text-xl
-            "
-          >
-            S'inscrire
-          </button>
-        </Routerlink>
+        <div>
+          <Routerlink to="/Inscription">
+            <button
+              class="
+                bg-Boutons-1
+                hover:bg-black
+                text-black
+                py-2
+                px-7
+                hover:border-black hover:text-Boutons-1
+                rounded-3xl
+                border-2 border-black
+                font-Barlow font-bold
+                text-xl
+              "
+            >
+              S'inscrire
+            </button>
+          </Routerlink>
+        </div>
       </div>
     </nav>
   </header>
@@ -158,3 +174,4 @@ import HelloWorld from "@/components/HelloWorld.vue";
 @import "@/assets/normalize.css";
 @import "@/assets/inscription.css";
 </style>
+
