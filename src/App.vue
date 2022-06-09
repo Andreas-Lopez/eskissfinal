@@ -147,6 +147,20 @@ import HelloWorld from "@/components/HelloWorld.vue";
   </footer>
 </template>
 
+<script>
+export default {
+  name: "App",
+  data() {
+    return {
+      menuOuvert: false,
+    };
+  },
+  beforeMount() {
+    this.$router.afterEach(() => (this.menuOuvert = false));
+  },
+};
+</script>
+
 <style>
 @import "@/assets/base.css";
 @import "@/index.css";

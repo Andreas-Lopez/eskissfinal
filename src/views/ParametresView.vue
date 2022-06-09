@@ -157,6 +157,24 @@
           </div>
         </div>
         <div class="flex ml-32"></div>
+        <div class="flex ml-32">
+          <div class="flex justify-between bg-Canson1-1 mb-10 p-5">
+            <div class="w-96">
+              <div>
+                <p class="flex justify-between">Pays</p>
+                <p>France</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Date de naissance</p>
+                <p>16/09/2002</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Date de naissance</p>
+                <p>16/09/2002</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>

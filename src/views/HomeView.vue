@@ -11,9 +11,8 @@
             </h3>
             <h4 class="font-Barlow text-white text-xl mt-10">
               Confiez un dessin cher à votre cœur à un de nos artistes afin
-              qu’il lui donne <br />
-              vie à sa manière. Vous pouvez vous inscrire gratuitement
-              ci-dessous.
+              qu’il lui donne vie à sa manière. Vous pouvez vous inscrire
+              gratuitement ci-dessous.
             </h4>
 
             <Routerlink to="/Inscription">

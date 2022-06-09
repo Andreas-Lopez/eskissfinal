@@ -6,7 +6,7 @@
         <h2 class="font-Luckiest text-6xl text-black">Messagerie</h2>
       </div>
     </div>
-    <div class="container">
+    <div class="bg-white border-4 border-black m-5">
       <div class="card-header">
         <h5 style="color: white">Chat</h5>
       </div>
@@ -19,10 +19,10 @@
       <div v-else>
         <div class="input-group mb-3">
           <div class="input-group-prepend">
-            <span class="input-group-text">Sélectionner un utilisateur</span>
+            <span class="font-Luckiest pl-5">Sélectionner un utilisateur</span>
           </div>
           <select
-            class="custom-select"
+            class="ml-5 font-Barlow"
             v-model="userSelected"
             @change="selectUser"
           >
@@ -32,17 +32,30 @@
             </option>
           </select>
         </div>
-        <div v-if="userSelected != null">
+        <div
+          class="
+            pl-5
+            font-Barlow font-medium
+            border-4 border-Canson1-1
+            w-5/6
+            justify-items-center
+            m-auto
+            py-6
+            mb-7
+            flex
+          "
+          v-if="userSelected != null"
+        >
           <form class="mb-3" @submit.prevent="createDisc()">
-            <div class="input-group">
+            <div class="border-Canson1-1 w-4/5">
               <div class="input-group-prepend">
                 <span class="input-group-text"
-                  >Nouveau fil avec {{ userSelected.login }}</span
+                  >Envoyer un message à {{ userSelected.login }}</span
                 >
               </div>
               <input
                 type="text"
-                class="form-control"
+                class="w-80 bg-Canson1-1"
                 v-model="libelle"
                 required
               />
@@ -52,8 +65,10 @@
             </div>
           </form>
 
-          <h5>Vos fils de discussion avec : {{ userSelected.login }}</h5>
-          <div v-if="chat.length > 0">
+          <div
+            class="bg-Canson1-1 rounded-xl w-4/5 ml-20 mr-14"
+            v-if="chat.length > 0"
+          >
             <table class="table text-light">
               <tbody>
                 <tr v-for="disc in chat" :key="disc.uid">
@@ -65,21 +80,32 @@
                   </td>
                   <td>
                     <button
-                      class="btn btn-light mr-3"
+                      class="bg-Canson1-1 mr-3"
                       type="button"
                       @click="viewFil(disc)"
                       title="Voir ce fil"
                     >
                       <i class="fa fa-eye fa-lg"></i>
                     </button>
-                    <button
-                      class="btn btn-light"
-                      type="button"
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
                       @click="deleteFil(disc)"
                       title="Supprimer ce fil"
                     >
-                      <i class="fa fa-trash fa-lg"></i>
-                    </button>
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                      />
+                    </svg>
+
+                    <i class="fa fa-trash fa-lg"></i>
                   </td>
                 </tr>
               </tbody>
@@ -117,7 +143,7 @@
                       </div>
                     </div>
                     <div class="col-8 text-center mb-1">
-                      <div class="recep">
+                      <div class="bg-Canson1-1">
                         <p>{{ msg.contenu }}</p>
                       </div>
                     </div>
@@ -125,7 +151,7 @@
 
                   <div class="row mb-3" v-if="msg.by == userSelected.uid">
                     <div class="col-8 text-center">
-                      <div class="w-70 emet">
+                      <div class="w-72 bg-Canson1-1">
                         <p>{{ msg.contenu }}</p>
                       </div>
                     </div>
@@ -391,34 +417,5 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.avatar {
-  vertical-align: middle;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.emet {
-  color: black;
-  background-color: lightyellow;
-  padding: 10px;
-  border-radius: 50px 20px;
-  word-wrap: break-word;
-}
-.recep {
-  color: black;
-  background-color: lightblue;
-  padding: 10px;
-  border-radius: 50px 20px;
-  word-wrap: break-word;
-}
-.msg {
-  color: black;
-  background-color: lightgrey;
-  padding: 10px;
-  border-radius: 20px 20px;
-}
-</style>
 
 
