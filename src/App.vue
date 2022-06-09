@@ -121,10 +121,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/Don">Faire un don</RouterLink>
         <RouterLink to="/CGV">CGV</RouterLink>
       </div>
-      <div class="reseaux width30 pl-20">
-        <a href="#"><img src="/instagram.svg" alt="insta" /></a>
-        <a href="#"><img src="/facebook.svg" alt="facebook" /></a>
-      </div>
+
       <div class="paiements">
         <h4 class="titlefoot2 text-Police-Footer-1 font-Barlow font-bold pl-32">
           Modes de paiement
