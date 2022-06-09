@@ -28,10 +28,13 @@
       <div class="bg-white">
         <div class="flex ml-3 pt-2">
           <img src="/user.svg" alt="Icone utilisateur" />
+
           <p class="font-Luckiest text-black ml-2">Artiste ESKISS</p>
         </div>
         <div>
-          <img src="/galerie1.jpg" alt="Illustration d'artiste" />
+          <RouterLink to="/GalerieArtiste">
+            <img src="/galerie1.jpg" alt="Illustration d'artiste" />
+          </RouterLink>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 mr-auto ml-auto mb-4"
