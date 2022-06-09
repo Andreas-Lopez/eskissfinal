@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="bg-black pb-10">
+    <div class="bg-black pb-9">
       <div class="bg-black flex justify-around">
         <div class="mt-32">
           <h4
