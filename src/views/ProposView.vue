@@ -18,7 +18,7 @@
       2e semestre de première année.
     </p>
     <div class="bg-rose-300 mt-20">
-      <div class="bg-rose-300 flex justify-around">
+      <div class="bg-rose-300 flex justify-around p-8">
         <img src="/illuap.jpg" alt="Illustration" />
         <div class="mt-32">
           <h4

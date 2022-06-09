@@ -15,7 +15,12 @@
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg>
             <li>
@@ -156,21 +161,37 @@
             <h2 class="font-Luckiest text-6xl text-black">Paramètres</h2>
           </div>
         </div>
-        <div class="flex ml-32"></div>
+
         <div class="flex ml-32">
           <div class="flex justify-between bg-Canson1-1 mb-10 p-5">
             <div class="w-96">
               <div>
-                <p class="flex justify-between">Pays</p>
-                <p>France</p>
+                <div class="flex justify-between pb-3">
+                  <p>Pays</p>
+                  <p>France</p>
+                </div>
+                <div class="flex justify-between pb-3">
+                  <p>Ville</p>
+                  <p>Montbéliard</p>
+                </div>
+                <div class="flex justify-between">
+                  <p>Date de naissance</p>
+                  <p>16/09/2002</p>
+                </div>
               </div>
-              <div class="flex justify-between">
-                <p>Date de naissance</p>
-                <p>16/09/2002</p>
-              </div>
-              <div class="flex justify-between">
-                <p>Date de naissance</p>
-                <p>16/09/2002</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex ml-32">
+          <div class="flex justify-between bg-Canson1-1 mb-10 p-5">
+            <div class="w-[900px]">
+              <div>
+                <input
+                  type="text"
+                  id="mail"
+                  class="bg-Canson1-1 pl-5 pb-32 focus:outline-none"
+                  placeholder="Ma description ici"
+                />
               </div>
             </div>
           </div>
