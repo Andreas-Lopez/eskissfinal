@@ -163,7 +163,6 @@ export default {
           </div>
         </div>
         <div class="flex">
-          <img src="pp.svg" alt="" />
           <div class="flex items-center justify-center ml-10">
             <button
               class="
