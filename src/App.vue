@@ -122,7 +122,6 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/CGV">CGV</RouterLink>
       </div>
       <div class="reseaux width30 pl-20">
-        <a href="#"><img src="/twitter.svg" alt="twitter" /></a>
         <a href="#"><img src="/instagram.svg" alt="insta" /></a>
         <a href="#"><img src="/facebook.svg" alt="facebook" /></a>
       </div>
