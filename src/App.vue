@@ -69,7 +69,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
               font-Luckiest
               text-xl
             "
-            >À propos
+            >A propos
           </RouterLink>
         </div>
         <RouterLink
