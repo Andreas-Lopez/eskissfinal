@@ -1,5 +1,4 @@
 <template>
-  <!-- component -->
   <div
     class="
       bg-[url('/fondinsc.jpg')]

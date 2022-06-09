@@ -73,6 +73,12 @@ import HelloWorld from "@/components/HelloWorld.vue";
           </RouterLink>
         </div>
         <RouterLink
+          to="/MonCompte"
+          class="flex items-center flex-shrink-0 text-white mr-6"
+        >
+          <img class="w-10" src="/userapp.svg" alt="" />
+        </RouterLink>
+        <RouterLink
           to="/Messagerie"
           class="flex items-center flex-shrink-0 text-white mr-6"
         >
@@ -94,7 +100,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
                 text-xl
               "
             >
-              Mon Compte
+              Se connecter
             </button>
           </RouterLink>
         </div>
@@ -121,7 +127,11 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/Don">Faire un don</RouterLink>
         <RouterLink to="/CGV">CGV</RouterLink>
       </div>
-
+      <div class="reseaux width30 pl-20">
+        <img class="w-10 p-1" src="/twitter.svg" alt="twitter" />
+        <img class="w-10 p-1" src="/instagram.svg" alt="insta" />
+        <img class="w-10 p-1" src="/facebook.svg" alt="facebook" />
+      </div>
       <div class="paiements">
         <h4 class="titlefoot2 text-Police-Footer-1 font-Barlow font-bold pl-32">
           Modes de paiement

@@ -163,6 +163,7 @@ export default {
           </div>
         </div>
         <div class="flex">
+          <img class="w-40" src="/profile.png" alt="" />
           <div class="flex items-center justify-center ml-10">
             <button
               class="
