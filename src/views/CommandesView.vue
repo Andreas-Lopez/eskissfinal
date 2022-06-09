@@ -1,9 +1,3 @@
-<script>
-export default {
-  name: "MonCompteView",
-};
-</script>
-
 <template>
   <main>
     <div class="flex">
@@ -21,7 +15,7 @@ export default {
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
               />
             </svg>
             <li>
@@ -35,7 +29,6 @@ export default {
                   font-normal
                   text-gray-900
                   rounded-lg
-                  bg-black bg-opacity-30
                 "
               >
                 <svg
@@ -66,6 +59,7 @@ export default {
                   font-normal
                   text-gray-900
                   rounded-lg
+                  bg-black bg-opacity-30
                 "
               >
                 <svg
@@ -159,137 +153,46 @@ export default {
         <div class="relative text-center mb-10">
           <img src="/trace.svg" alt="trace_rose" />
           <div class="absolute w-[600px] top-[30%] left-[10%]">
-            <h2 class="font-Luckiest text-6xl text-black">Gérer son compte</h2>
+            <h2 class="font-Luckiest text-6xl text-black">Mes Commandes</h2>
           </div>
         </div>
-        <div class="flex">
-          <img src="pp.svg" alt="" />
-          <div class="flex items-center justify-center ml-10">
-            <button
-              class="
-                bg-Boutons-1
-                hover:bg-black
-                text-black
-                py-2
-                px-5
-                hover:border-black hover:text-Boutons-1
-                rounded-3xl
-                border-2 border-black
-                font-Barlow font-bold
-                text-xl
-                h-min
-              "
-            >
-              Changer d'avatar
-            </button>
-          </div>
-          <div class="flex items-center justify-center ml-60">
-            <button
-              class="
-                bg-Boutons-1
-                hover:bg-black
-                text-black
-                py-2
-                px-5
-                hover:border-black hover:text-Boutons-1
-                rounded-3xl
-                border-2 border-black
-                font-Barlow font-bold
-                text-xl
-                h-min
-                flex
-              "
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 mt-1"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              Artistes Favoris
-            </button>
-          </div>
-        </div>
-        <div class="flex items-center text-lg mb-6 md:mb-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 mr-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="white"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            />
-          </svg>
+        <div class="flex ml-32">
           <div>
-            <p class="font-Barlow font-semibold mt-10 ml-1 text-xl">
-              Nom d'utilisateur
-            </p>
-            <input
-              type="text"
-              id="mail"
-              class="bg-Canson1-1 pl-5 py-2 md:py-2 focus:outline-none"
-              placeholder="Eliot"
-            />
+            <img src="/galerie1.jpg" alt="" />
           </div>
-          <div class="ml-60">
-            <p class="font-Barlow font-semibold mt-10 ml-1 text-xl">
-              Nom complet
+          <div class="">
+            <p class="font-Barlow font-bold mb-24 ml-10">
+              Numéro de commande : XXXXXXXXXXXX
             </p>
-            <input
-              type="text"
-              id="mail"
-              class="bg-Canson1-1 pl-5 py-2 md:py-2 focus:outline-none"
-              placeholder="Eliot Gros"
-            />
+            <p class="font-Barlow font-bold mb-24 ml-10">
+              Commande effectuée le : XX/XX/XXXX
+            </p>
+            <p class="font-Barlow font-bold ml-10">Par : ESKISS ARTIST N°2</p>
           </div>
         </div>
-        <div class="flex items-center text-lg md:mb-20">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 mr-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="white"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            />
-          </svg>
+        <div
+          class="
+            w-full
+            bg-black
+            mt-24
+            mb-24
+            rounded-full
+            h-1.5
+            dark:bg-gray-700
+          "
+        ></div>
+        <div class="flex ml-32 mb-24">
           <div>
-            <p class="font-Barlow font-semibold mt-10 ml-1 text-xl">
-              Adresse mail
-            </p>
-            <input
-              type="text"
-              id="mail"
-              class="bg-Canson1-1 pl-5 py-2 md:py-2 focus:outline-none"
-              placeholder="eliotgros@gmail.com"
-            />
+            <img src="/galerie1.jpg" alt="" />
           </div>
-          <div class="ml-60">
-            <p class="font-Barlow font-semibold mt-10 ml-1 text-xl">
-              Numéro de téléphone
+          <div class="">
+            <p class="font-Barlow font-bold mb-24 ml-10">
+              Numéro de commande : XXXXXXXXXXXX
             </p>
-            <input
-              type="text"
-              id="mail"
-              class="bg-Canson1-1 pl-5 py-2 md:py-2 focus:outline-none"
-              placeholder="06 58 36 48 52"
-            />
+            <p class="font-Barlow font-bold mb-24 ml-10">
+              Commande effectuée le : XX/XX/XXXX
+            </p>
+            <p class="font-Barlow font-bold ml-10">Par : ESKISS ARTIST N°2</p>
           </div>
         </div>
       </div>

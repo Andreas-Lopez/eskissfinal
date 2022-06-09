@@ -8,7 +8,11 @@ import ProposView from '../views/ProposView.vue'
 import CGVView from '../views/CGVView.vue'
 import InscriptionView from '../views/InscriptionView.vue'
 import GalerieArtisteView from '../views/GalerieArtisteView.vue'
-import MonCompteView from '../views/MoncompteView.vue'
+import MonCompteView from '../views/MonCompteView.vue'
+import CommandesView from '../views/CommandesView.vue'
+import ParametresView from '../views/ParametresView.vue'
+import FavorisView from '../views/FavorisView.vue'
+import MessagerieView from '../views/MessagerieView.vue'
 
 
 const router = createRouter({
@@ -24,6 +28,10 @@ const router = createRouter({
     { path: '/Inscription',    name: 'InscriptionView',      component: InscriptionView },
     { path: '/GalerieArtiste',    name: 'GalerieArtisteView',      component: GalerieArtisteView },
     { path: '/MonCompte',    name: 'MonCompteView',      component: MonCompteView },
+    { path: '/Commandes',    name: 'CommandesView',      component: CommandesView },
+    { path: '/Parametres',    name: 'ParametresView',      component: ParametresView },
+    { path: '/Favoris',    name: 'FavorisView',      component: FavorisView },
+    { path: '/Messagerie',    name: 'MessagerieView',      component: MessagerieView },
   ]
 })
 

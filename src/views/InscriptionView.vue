@@ -11,7 +11,7 @@
     "
   >
     <div class="bg-black lg:w-5/12 md:6/12 w-10/12 shadow-3xl bg-opacity-50">
-      <form class="p-12 md:p-24">
+      <form @submit.prevent="onCnx" class="p-12 md:p-24">
         <div class="flex items-center text-lg mb-6 md:mb-8">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,10 +28,20 @@
             />
           </svg>
           <input
-            type="text"
+            type="email"
             id="nom"
-            class="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full"
-            placeholder="Nom"
+            class="
+              bg-gray-200
+              pl-12
+              py-2
+              md:py-4
+              focus:outline-none
+              w-full
+              form-control
+            "
+            placeholder="Adresse mail"
+            v-model="user.email"
+            required
           />
         </div>
 
@@ -51,34 +61,23 @@
             />
           </svg>
           <input
-            type="password"
+            type="type"
             id="password"
-            class="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full"
+            class="
+              bg-gray-200
+              pl-12
+              py-2
+              md:py-4
+              focus:outline-none
+              w-full
+              form-control
+            "
             placeholder="Mot de passe"
+            v-model="user.password"
+            required
           />
         </div>
-        <div class="flex items-center text-lg mb-6 md:mb-8">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-10 mr-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="white"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-            />
-          </svg>
-          <input
-            type="text"
-            id="mail"
-            class="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full"
-            placeholder="Adresse mail"
-          />
-        </div>
+
         <div class="flex mt-3 mb-3 ml-36">
           <label class="flex items-center">
             <input type="checkbox" class="form-checkbox h-5 w-5" />
@@ -87,8 +86,14 @@
             </div>
           </label>
         </div>
+        <div class="input-group-after">
+          <button class="btn btn-light" @click.prevent="affiche()">
+            <i class="fa fa-eye fa-lg"></i>
+          </button>
+        </div>
         <Routerlink to="/">
           <button
+            type="submit"
             class="
               bg-Boutons-1
               hover:bg-black
@@ -100,14 +105,77 @@
               border-2 border-black
               font-Barlow font-bold
               text-xl
-              ml-20
+              ml-32
               mt-5
             "
           >
-            S'inscrire gratuitement
+            Se connecter
           </button>
         </Routerlink>
       </form>
     </div>
   </div>
 </template>
+
+<script>
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from "https://www.gstatic.com/firebasejs/9.7.0/firebase-auth.js";
+export default {
+  name: "MonCompte",
+  data() {
+    return {
+      user: {
+        email: "",
+        password: "",
+      },
+      message: null,
+      view: false,
+      type: "password",
+      imageData: null,
+    };
+  },
+
+  mounted() {
+    this.message = "User non connecté";
+  },
+  methods: {
+    onCnx() {
+      signInWithEmailAndPassword(getAuth(), this.user.email, this.user.password)
+        .then((response) => {
+          this.user = response.user;
+          console.log("user", this.user);
+          this.message = "User connecté : " + this.user.email;
+        })
+        .catch((error) => {
+          console.log("Erreur connexion", error);
+          this.message = "Erreur d'authentification";
+        });
+    },
+    onDcnx() {
+      signOut(getAuth())
+        .then((response) => {
+          this.message = "User non connecté";
+          this.user = {
+            email: null,
+            password: null,
+          };
+        })
+        .catch((error) => {
+          console.log("erreur deconnexion", error);
+        });
+    },
+    affiche() {
+      this.view = !this.view;
+      if (this.view) {
+        this.type = "text";
+      } else {
+        this.type = "password";
+      }
+    },
+  },
+};
+</script>

@@ -16,34 +16,6 @@ import HelloWorld from "@/components/HelloWorld.vue";
       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div class="text-sm lg:flex-grow text-right">
           <RouterLink
-            to="/MonCompte"
-            class="
-              block
-              mt-4
-              lg:inline-block lg:mt-0
-              text-white
-              hover:text-Boutons-1
-              mr-10
-              font-Luckiest
-              text-xl
-            "
-            >monn compte
-          </RouterLink>
-          <RouterLink
-            to="/Inscription"
-            class="
-              block
-              mt-4
-              lg:inline-block lg:mt-0
-              text-white
-              hover:text-Boutons-1
-              mr-10
-              font-Luckiest
-              text-xl
-            "
-            >inscription (temporaire)
-          </RouterLink>
-          <RouterLink
             to="/Don"
             class="
               block
@@ -100,11 +72,14 @@ import HelloWorld from "@/components/HelloWorld.vue";
             >A propos
           </RouterLink>
         </div>
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <RouterLink
+          to="/Messagerie"
+          class="flex items-center flex-shrink-0 text-white mr-6"
+        >
           <img src="/Lettre.svg" alt="" />
-        </div>
+        </RouterLink>
         <div>
-          <Routerlink to="/Inscription">
+          <RouterLink to="/Inscription">
             <button
               class="
                 bg-Boutons-1
@@ -119,16 +94,16 @@ import HelloWorld from "@/components/HelloWorld.vue";
                 text-xl
               "
             >
-              S'inscrire
+              Mon Compte
             </button>
-          </Routerlink>
+          </RouterLink>
         </div>
       </div>
     </nav>
   </header>
   <RouterView />
 
-  <footer>
+  <footer class="pl-24">
     <div class="flex-row width70">
       <div class="barreblanche"></div>
       <h3 class="titlefoot text-Police-Footer-1 font-Barlow font-bold">
@@ -146,20 +121,20 @@ import HelloWorld from "@/components/HelloWorld.vue";
         <RouterLink to="/Don">Faire un don</RouterLink>
         <RouterLink to="/CGV">CGV</RouterLink>
       </div>
-      <div class="reseaux width30">
+      <div class="reseaux width30 pl-20">
         <a href="#"><img src="/twitter.svg" alt="twitter" /></a>
         <a href="#"><img src="/instagram.svg" alt="insta" /></a>
         <a href="#"><img src="/facebook.svg" alt="facebook" /></a>
       </div>
       <div class="paiements">
-        <h4 class="titlefoot2 text-Police-Footer-1 font-Barlow font-bold">
+        <h4 class="titlefoot2 text-Police-Footer-1 font-Barlow font-bold pl-32">
           Modes de paiement
         </h4>
-        <div class="paiements2">
-          <img class="imgpaiement" src="/paypal.jpg" alt="Paypal" />
-          <img class="imgpaiement" src="/mastercard.jpg" alt="Mastercard" />
-          <img class="imgpaiement" src="/cb.jpg" alt="CB" />
-          <img class="imgpaiement" src="/visa.jpg" alt="Visa" />
+        <div class="paiements2 pl-12">
+          <img class="imgpaiement" src="/paypal.png" alt="Paypal" />
+          <img class="imgpaiement" src="/mastercard.png" alt="Mastercard" />
+          <img class="imgpaiement" src="/cb.png" alt="CB" />
+          <img class="imgpaiement" src="/visa.png" alt="Visa" />
         </div>
       </div>
     </div>
