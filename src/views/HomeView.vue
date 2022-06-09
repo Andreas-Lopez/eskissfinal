@@ -125,7 +125,7 @@
               d’informations en cliquant sur “À propos”
             </h4>
 
-            <RouterLink to="/Inscription">
+            <Routerlink to="/Inscription">
               <button
                 class="
                   bg-Boutons-1
@@ -146,7 +146,7 @@
               >
                 S'inscrire gratuitement
               </button>
-            </RouterLink>
+            </Routerlink>
           </div>
         </div>
       </div>
